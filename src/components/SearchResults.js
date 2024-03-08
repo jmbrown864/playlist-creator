@@ -10,7 +10,7 @@ export default function SearchResults({ suggestedSongs }) {
                 {
                     suggestedSongs &&
                     suggestedSongs.map((song =>
-                        <Song title={song.title} artist={song.artist} />
+                        <Song key={song.id} title={song.title} artist={song.artist} />
                     ))
                 }
             </div>
